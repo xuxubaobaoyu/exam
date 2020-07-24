@@ -1,8 +1,6 @@
-#include <stdio.h>
+#include "D.h"
 
-int main()
+int chu(int a, int b)
 {
-
-	printf("hello world\n");
-	return 0;
+	return a / b;
 }
