@@ -6,6 +6,6 @@
 #else
 #define		DLL_IMPORT_EXPORT	 __declspec(dllimport)		
 #endif
-extern "C"	DLL_IMPORT_EXPORT	int chen(int a, int b);
+extern "C"	DLL_IMPORT_EXPORT	int mul_C(int a, int b);
 
 #endif

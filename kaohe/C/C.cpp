@@ -1,6 +1,6 @@
 #include "C.h"
 
-int chen(int a, int b)
+int mul_C(int a, int b)
 {
 	return a * b;
 }
