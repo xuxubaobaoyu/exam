@@ -6,36 +6,75 @@
 #include <string.h>
 
 #define N 200
+void pri(void);
 int main()
 {
 	char num[N];
+	double a, b,d;
+	int shu = 0,c=0;
+	pri();
+	while (gets(num))
+	{	
+		if ((isdigit(num[0]) && num[0]> '0'&& num[0]  <'5' && num[1] == '\0') || num[0] == '-')//判断输入是否为非法字符
+		{
+			if (num[0] == '1')//A
+			{
+				printf("请输入两个数字，用空格隔开输入\n");
+				printf("输入范围为0.000001至1000000000");
+				printf("输入完成后，按回车继续\n");
+				scanf("%lf%lf", &a, &b);
+				printf("相+结果：%lf\n", sum_A(a, b));
+				printf("请再选择加减乘除\n");
+			}
+			else if (num[0] == '2')//B
+			{
+				printf("请输入两个数字，用空格隔开输入\n");
+				printf("输入范围为0.000001至1000000000");
+				printf("输入完成后，按回车继续\n");
+				scanf("%lf%lf", &a, &b);
+				printf("相-结果：%lf\n", sub_B(a, b));
+				printf("请再选择加减乘除\n");
+			}
+			else if (num[0] == '3')//C
+			{
+				printf("请输入两个数字，用空格隔开输入\n");
+				printf("输入范围为0.000001至1000000000");
+				printf("输入完成后，按回车继续\n");
+				scanf("%lf%lf", &a, &b);
+				printf("相*结果：%lf\n", mul_D(a, b));
+				printf("请再选择加减乘除\n");
+			}
+			else if (num[0] == '4')//D
+			{
+				printf("请输入两个数字，用空格隔开输入\n");
+				printf("输入范围为0.000001至1000000000");
+				printf("输入完成后，按回车继续\n");
+				scanf("%lf%lf", &a, &b);
+				d = div_D(a, b, &c);
+				if (c == 1)
+				{
+					c = 0;
+					printf("除数不能为0\n");
+				}
+				else
+				{
+					printf("相/结果：%lf\n",d);
+				}
+				printf("请再选择加减乘除\n");
+			}
+		}
+	}
+	return 0;
+}
+void pri(void)
+{
+	printf("------------------------------------------------\n");
 	printf("请输入1、2、3、4选择加减乘除:\n");
 	printf("1、加\n");
 	printf("2、减\n");
 	printf("3、乘\n");
 	printf("4、除\n");
 	printf("输入完成后，按回车继续\n");
-	while (gets(num),1)
-	{	
-		if ((isdigit(num[0]) && num[0]> '0'&& num[0]  <'5') && num[1] == '\0')
-		{
-			switch (num[0])
-			{
-			case '1':
-				//printf("请输入两个数字，用空格隔开输入\n");
-				//printf("输入完成后，按回车继续\n");
-
-				printf("相加结果：%lf\n", sum_A(1, 2)); break;
-			case '2':printf("相减结果：%d\n", sub_B(1, 2)); break;
-			case '3':printf("相乘结果：%lf\n", mul_D(1, 3)); break;
-			case '4':printf("相除结果：%d\n", div_D(2, 2)); break;
-			default:  break;
-			}
-		}
-		else
-		{
-			printf("输入错误，请重新输入\n");
-		}
-	}
-	return 0;
+	printf("------------------------------------------------\n");
+	return;
 }

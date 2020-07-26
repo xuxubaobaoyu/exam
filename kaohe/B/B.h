@@ -6,6 +6,6 @@
 #else
 #define		DLL_IMPORT_EXPORT	__declspec(dllimport)		
 #endif
-DLL_IMPORT_EXPORT	int sub_B(int a, int b);
+extern "C" DLL_IMPORT_EXPORT	double sub_B(double a, double b);
 
 #endif

@@ -1,12 +1,21 @@
 #include "D.h"
 
-int div_D(int a, int b)
+double div_D(double a, double b,int* c)
 {
-	return a / b;
+	if (b == 0)
+	{
+		*c = 1;
+		return 0;
+	}
+	else
+	{
+		return a/b;
+	}
+	
 }
 double mul_D(double a,double b)
 {
-	int result = 0;
+	double result = 0;
 	HINSTANCE handle = LoadLibrary("C.dll");//LoadLibrary填入ddl文件名赋值给句柄，你不懂句柄就拉倒了，这个不重要。
 	if (handle) //判读句柄内dll是否可用
 	{
