@@ -15,7 +15,8 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestA)
 		{
-			Assert::AreEqual(3.0, sum_A(1.0,2.0));
+		//	Assert::AreEqual(2.0, sum_A(1.0, 1));
+			Assert::AreEqual(3.08000000000000002, sum_A(1.0, 0.08000000000000002), 0.000000000000000001);
 		}
 		TEST_METHOD(TestB)
 		{
@@ -31,10 +32,10 @@ namespace UnitTest1
 		{
 			Assert::AreEqual(1.0, div_D(1.0, 1));
 		}
-		//TEST_METHOD(TestD2)
-		//{
-		//	Assert::AreEqual(1.0, div_D(1.0, 0));
-		//}
+		TEST_METHOD(TestD2)
+		{
+			Assert::AreEqual(1.0, div_D(1.0, 0));
+		}
 
 	};
 }
