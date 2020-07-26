@@ -44,6 +44,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\DUYIKUAI\Desktop\exam\kaohe\D;C:\Users\DUYIKUAI\Desktop\exam\kaohe\C;C:\Users\DUYIKUAI\Desktop\exam\kaohe\B;C:\Users\DUYIKUAI\Desktop\exam\kaohe\A;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\DUYIKUAI\Desktop\exam\kaohe\D\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -61,7 +62,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>C:\Users\DUYIKUAI\Desktop\exam\kaohe\A\Debug\*.obj;C:\Users\DUYIKUAI\Desktop\exam\kaohe\B\Debug\*.obj;C:\Users\DUYIKUAI\Desktop\exam\kaohe\C\Debug\*.obj;C:\Users\DUYIKUAI\Desktop\exam\kaohe\D\Debug\*.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\DUYIKUAI\Desktop\exam\kaohe\A\Debug\*.obj;C:\Users\DUYIKUAI\Desktop\exam\kaohe\B\Debug\*.obj;C:\Users\DUYIKUAI\Desktop\exam\kaohe\C\Debug\*.obj;D.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

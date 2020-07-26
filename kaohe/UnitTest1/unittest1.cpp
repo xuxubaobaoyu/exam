@@ -15,26 +15,26 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestA)
 		{
-			Assert::AreEqual(10.0, sum_A(1.0,2.0));// TODO:  在此输入测试代码
+			Assert::AreEqual(3.0, sum_A(1.0,2.0));
 		}
 		TEST_METHOD(TestB)
 		{
-			Assert::AreEqual(10.0, sub_B(1.0, 2.0));// TODO:  在此输入测试代码
+			Assert::AreEqual(-1.0, sub_B(1.0, 2.0));
 		}
 		TEST_METHOD(TestC)
 		{
-			Assert::AreEqual(10.0, mul_C(1.0, 2.0));// TODO:  在此输入测试代码
+			Assert::AreEqual(2.0, mul_C(1.0, 2.0));
+			Assert::AreEqual(2.0, mul_D(1.0, 2.0));
 		}
 
-		int c=0;
 		TEST_METHOD(TestD1)
 		{
-			Assert::AreEqual(10.0, div_D(1.0, 1,&c));// TODO:  在此输入测试代码
+			Assert::AreEqual(1.0, div_D(1.0, 1));
 		}
-		TEST_METHOD(TestD2)
-		{
-			Assert::AreEqual(10.0, div_D(1.0, 0, &c));// TODO:  在此输入测试代码
-		}
+		//TEST_METHOD(TestD2)
+		//{
+		//	Assert::AreEqual(1.0, div_D(1.0, 0));
+		//}
 
 	};
 }

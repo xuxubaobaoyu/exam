@@ -4,6 +4,6 @@
 #include <Windows.h>
 #include <stdio.h>
 
-double div_D(double a, double b, int* c);
+double div_D(double a, double b);
 double mul_D(double a,double b);
 #endif
