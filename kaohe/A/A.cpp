@@ -1,6 +1,7 @@
 #include "A.h"
 
-int sum_A(int a, int b)
+double	sum_A(double a, double b)
 {
+	
 	return a + b;
 }
