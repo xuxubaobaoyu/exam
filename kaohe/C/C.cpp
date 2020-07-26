@@ -1,6 +1,6 @@
 #include "C.h"
 
-int mul_C(int a, int b)
+double mul_C(double a, double b)
 {
 	return a * b;
 }
