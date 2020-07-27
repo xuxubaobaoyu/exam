@@ -21,9 +21,10 @@ int main()
 			{
 				printf("请输入两个数字，用空格隔开输入\n");
 				printf("输入范围为-1000000000至1000000000");
+				printf("若输入小数精确到后6位\n");
 				printf("输入完成后，按回车继续\n");
 				scanf("%lf%lf", &a, &b);
-				printf("相+结果：%lf\n", sum_A(a, b));
+				printf("相+结果：%1.7lf\n", sum_A(a, b));
 				printf("请再选择加减乘除\n");
 			}
 			else if (num[0] == '2')//B
@@ -32,7 +33,7 @@ int main()
 				printf("输入范围为-1000000000至1000000000");
 				printf("输入完成后，按回车继续\n");
 				scanf("%lf%lf", &a, &b);
-				printf("相-结果：%lf\n", sub_B(a, b));
+				printf("相-结果：%.7lf\n", sub_B(a, b));
 				printf("请再选择加减乘除\n");
 			}
 			else if (num[0] == '3')//C
@@ -41,7 +42,7 @@ int main()
 				printf("输入范围为-1000000000至1000000000");
 				printf("输入完成后，按回车继续\n");
 				scanf("%lf%lf", &a, &b);
-				printf("相*结果：%lf\n", mul_D(a, b));
+				printf("相*结果：%.7lf\n", mul_D(a, b));
 				printf("请再选择加减乘除\n");
 			}
 			else if (num[0] == '4')//D
@@ -58,7 +59,7 @@ int main()
 				else
 				{
 					d = div_D(a, b);
-					printf("相/结果：%lf\n",d);
+					printf("相/结果：%.7lf\n",d);
 				}
 				printf("请再选择加减乘除\n");
 			}
