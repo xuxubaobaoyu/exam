@@ -38,7 +38,7 @@ namespace UnitTest1
 		}
 		TEST_METHOD(TestC)
 		{
-			//Assert::AreEqual(2.0, mul_C(1.0, 2.0));//基本功能测试
+			Assert::AreEqual(2.0, mul_C(1.0, 2.0));//基本功能测试
 			//Assert::AreEqual(2.0, mul_D(1.0, 2.0));//基本功能测试
 			/*边沿测试包括：输入溢出测试、计算溢出测试、小数点精确点位数测试、输入过小测试*/
 			Assert::AreEqual(1e40, mul_D(1e20, 1e20));//输入溢出测试、计算溢出测试，结果正确
